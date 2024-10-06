@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    
+    <style>
+      .active {
+        color: rgb(59 130 246);
+      }
+    </style>
+    <link rel="stylesheet" href="./assets/index-80204954.css">
+  </head>
+
+  <body class="m-auto">
+    <!-- Navbar Section -->
+    <nav class="flex sticky top-0 items-center justify-between w-full z-10 bg-white shadow-xl">
+        <h1 class="flex-1 lg:mx-12 py-8 font-extrabold font-serif text-xl lg:text-2xl text-center lg:text-left">
+          KUNAL PATIL
+        </h1>
+        <ul class="hidden lg:flex items-center h-1/2 space-x-2 lg:space-x-5 mr-4">
+          <li class="mx-3 py-2 px-3 lg:px-5 text-sm lg:text-lg font-medium text-blue-500 hover:bg-slate-100 rounded-full">
+            <a href="#home">HOME</a>
+          </li>
+          <li class="mx-3 py-2 px-3 lg:px-5 text-sm lg:text-lg font-medium text-blue-500 hover:bg-slate-100 rounded-full">
+            <a href="#about">ABOUT</a>
+          </li>
+          <li class="mx-3 py-2 px-3 lg:px-5 text-sm lg:text-lg font-medium text-blue-500 hover:bg-slate-100 rounded-full">
+            <a href="#project">PROJECTS</a>
+          </li>
+          <li class="mx-3 py-2 px-3 lg:px-5 text-sm lg:text-lg font-medium text-blue-500 hover:bg-slate-100 rounded-full">
+            <a href="#contact">CONTACT</a>
+          </li>
+        </ul>
+      </nav>      
+
+    <!-- Home Section -->
+    <div id="home" class="h-8"></div>
+    <div class="flex flex-col lg:flex-row justify-center my-6 lg:my-16">
+      <div class="px-4 lg:px-4">
+        <img
+          src="./assets/business-2717063_1920-59a44ccc.jpg"
+          alt=""
+          class="w-full lg:w-[600px] h-auto lg:h-[400px] my-4 lg:my-10 rounded-xl shadow-2xl"
+        />
+      </div>
+      <div class="font-extrabold p-4 lg:p-20 text-[30px] lg:text-[40px] text-center lg:text-left">
+        <div class="text-orange-600 text-[40px] lg:text-[60px] animate-bounce">
+          HELLO!
+        </div>
+        <div>I'm Kunal, a</div>
+        <div>Full-Stack Developer</div>
+        <div>based in Mumbai.</div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="h-16"></div>
+    <hr class="w-11/12 mx-auto border-t-2 border-gray-300" />
+
+    <div class="flex flex-col lg:flex-row justify-center items-center space-y-10 lg:space-x-40 lg:space-y-0 my-20">
+      <img
+        src="./assets/pic-29854990.jpg"
+        alt=""
+        class="w-[250px] lg:w-[350px] h-auto lg:h-[350px] shadow-2xl rounded-full"
+      />
+      <div class="flex flex-col space-y-5 text-center lg:text-left items-center lg:items-start">
+        <div class="font-extrabold text-4xl lg:text-6xl">
+          KUNAL PATIL
+          <div class="text-lg lg:text-xl">Frontend Devloper</div>
+        </div>
+        <div class="font-semibold text-lg lg:text-2xl w-11/12 lg:w-[32rem] text-justify">
+          Hey there! My name is Kunal Anil Patil,
+            I am currently pursuing Bachelor's in Computer Engineering. I live
+            in Mumbai, the dream city of India. I'm passionate about crafting
+            engaging and user-friendly Websites. Driven by love for coding and
+            a keen eye for design, I thrive on creating seamless web
+            experiences.
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="project" class="h-16"></div>
+    <hr class="w-11/12 mx-auto border-t-2 border-gray-300" />
+
+    <div class="my-20 px-10 space-y-20">
+        <div class="font-extrabold mx-10 text-6xl flex justify-center lg:justify-start">Projects</div>
+        <div class="flex flex-col lg:flex-row justify-between items-center">
+          <button
+            id="leftButton"
+            class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 hidden lg:block" 
+          >
+            ←
+          </button>
+      
+          <div
+            id="projectContainer"
+            class="flex flex-col lg:flex-row overflow-x-hidden space-y-8 lg:space-y-0 lg:space-x-8 px-4 py-8 scroll-smooth"
+          >
+            <div class="min-w-[300px] max-w-[300px] bg-white shadow-xl rounded-lg p-6 text-center flex flex-col justify-between">
+              <img
+                src="data:image/png;base64,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"
+                alt="Spotify Clone"
+                class="w-16 h-16 mx-auto mb-4"
+              />
+              <div class="h-16 flex items-center justify-center">
+                <h2 class="font-bold text-2xl mb-2">Spotify Clone</h2>
+              </div>
+              <div class="mt-auto h-10">
+                <a href="https://github.com/kunal0395/Spotify_Clone" class="text-blue-500 font-semibold">View Project</a>
+              </div>
+            </div>
+      
+            <div class="min-w-[300px] max-w-[300px] bg-white shadow-xl rounded-lg p-6 text-center flex flex-col justify-between">
+              <img
+                src="./assets/smartreader_logo-4dfa5bf1.PNG"
+                alt="SmartReader"
+                class="w-16 h-16 mx-auto mb-4 opacity-75 filter brightness-125"
+              />
+              <div class="h-16 flex items-center justify-center">
+                <h2 class="font-bold text-2xl mb-2">SmartReader</h2>
+              </div>
+              <div class="mt-auto h-10">
+                <a href="https://github.com/kunal0395/SmartReader" class="text-blue-500 font-semibold">View Project</a>
+              </div>
+            </div>
+      
+            <div class="min-w-[300px] max-w-[300px] bg-white shadow-xl rounded-lg p-6 text-center flex flex-col justify-between">
+              <img
+                src="./assets/dribble_icon-7137392d.png"
+                alt="Dribble Internship Project"
+                class="w-16 h-16 mx-auto mb-4"
+              />
+              <div class="h-24 flex items-center justify-center">
+                <h2 class="font-bold text-2xl mb-2">Dribble Internship Project</h2>
+              </div>
+              <div class="mt-auto h-10">
+                <a href="https://github.com/kunal0395/Dribbble-Internship-Project" class="text-blue-500 font-semibold">View Project</a>
+              </div>
+            </div>
+      
+            <div class="min-w-[300px] max-w-[300px] bg-white shadow-xl rounded-lg p-6 text-center flex flex-col justify-between">
+              <img
+                src="data:image/png;base64,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"
+                alt="Advice Generator"
+                class="w-16 h-16 mx-auto mb-4"
+              />
+              <div class="h-16 flex items-center justify-center">
+                <h2 class="font-bold text-2xl mb-2">Advice Generator</h2>
+              </div>
+              <div class="mt-auto h-10">
+                <a href="https://github.com/kunal0395/Advice-Generator" class="text-blue-500 font-semibold">View Project</a>
+              </div>
+            </div>
+      
+            <div class="min-w-[300px] max-w-[300px] bg-white shadow-xl rounded-lg p-6 text-center flex flex-col justify-between">
+              <img
+                src="./assets/pomodoro_logo-7c2eaf2c.webp"
+                alt="Pomodoro App"
+                class="w-16 h-16 mx-auto mb-4 rounded-full"
+              />
+              <div class="h-16 flex items-center justify-center">
+                <h2 class="font-bold text-2xl mb-2">Pomodoro App</h2>
+              </div>
+              <div class="mt-auto h-10">
+                <a href="https://github.com/kunal0395/Pomodoro-Web-App" class="text-blue-500 font-semibold">View Project</a>
+              </div>
+            </div>
+      
+            <div class="min-w-[300px] max-w-[300px] bg-white shadow-xl rounded-lg p-6 text-center flex flex-col justify-between">
+              <img
+                src="./assets/passwordgenerator-6668ec46.webp"
+                alt="Password Generator App"
+                class="w-16 h-16 mx-auto mb-4 rounded-full"
+              />
+              <div class="h-24 flex items-center justify-center">
+                <h2 class="font-bold text-2xl mb-2">Password Generator App</h2>
+              </div>
+              <div class="mt-auto h-10">
+                <a href="https://github.com/kunal0395/Password-Generator" class="text-blue-500 font-semibold">View Project</a>
+              </div>
+            </div>
+          </div>
+      
+          <button
+            id="rightButton"
+            class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 hidden lg:block"
+          >
+            →
+          </button>
+        </div>
+      </div>      
+
+    <!-- Contact Section -->
+    <div id="contact" class="h-16"></div>
+    <hr class="w-11/12 mx-auto border-t-2 border-gray-300" />
+
+    <div class="mx-4 lg:mx-10">
+      <div class="mx-4 lg:mx-8 py-6 text-4xl lg:text-6xl font-semibold">Contact</div>
+      <ul class="flex flex-col lg:flex-row mx-4 lg:mx-12 space-y-4 lg:space-y-0 lg:space-x-8">
+        <li class="flex py-4 text-xl font-bold">
+          <a href="https://www.linkedin.com/in/kunal-patil-98a593285">LinkedIn</a>
+        </li>
+        <li class="flex py-4 text-xl font-bold">
+          <a href="https://www.github.com/kunal0395">Github</a>
+        </li>
+        <li class="flex py-4 text-xl font-bold">
+          <a href="mailto:kp3244510@gmail.com">Email</a>
+        </li>
+        <li class="flex py-4 text-xl font-bold">
+          <a href="./assets/Kunal_Resume.pdf">Resume</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Script for Project Navigation -->
+    <script>
+      const projectContainer = document.getElementById("projectContainer");
+      const leftButton = document.getElementById("leftButton");
+      const rightButton = document.getElementById("rightButton");
+
+      leftButton.addEventListener("click", () => {
+        projectContainer.scrollBy({
+          left: -300,
+          behavior: "smooth",
+        });
+      });
+
+      rightButton.addEventListener("click", () => {
+        projectContainer.scrollBy({
+          left: 300,
+          behavior: "smooth",
+        });
+      });
+    </script>
+  </body>
+</html>
